@@ -1,0 +1,51 @@
+ 
+ 
+<!-- Day 1 -->
+
+
+
+environment setup / learned How to print a statement / learned some github online work that how its work.
+
+console.log("Omair Ahmad Khalil")   
+// shortcut for console.log is just type log and then enter the suggestion
+for checking js intalled or not just type (node -v) in the terminal
+for Output we use (node Basic_1\test.js)
+
+// for printing more then oneline you can print it by using console.table() METHOD
+console.table([account_email, account_password, account_city, account_state]);
+
+
+
+
+
+<!-- Day 2 -->
+
+
+
+
+Learning about variables 
+
+const accountId = "11223344" // value will be assigned one time /  for unchangable values use const method
+let account_email = "omair@git.com" // let is the new way for initializing the variable and its bugs free
+var account_password = "111111"     // var is the old way for initializing  variables. it has some issues with the like scoping the variables (scope is {} ) so developer decides to use let method
+account_city = "peshawar"   // javascript can also initialize variables without adding the var/let before but we don't prefer it.
+
+// for printing more then oneline you can print it by using console.table() METHOD
+console.table([account_email, account_password, account_city, account_state]);
+
+// Updating Above variables 
+account_Id = "1111"    // This is not allowed because account_Id is a CONST variable
+
+
+// DATATYPES AND ECMA
+
+"Use strict"; // This Allows the compiler to treat all the javaScript code as a newer version
+
+ECMA is a website for writting a standerd of codes it gives us the rules to follow that
+
+
+//OBJECT
+
+console.log(typeof loggin); // Typeof is used for to find a type of the variable
+
+//null is a object // undefine is a undefine typeof
