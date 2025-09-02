@@ -11,7 +11,7 @@ let loggin = false;
 
  //Primitive DATATYPES
 
-// Number => 22;       0 to power 53
+// Number => 22;       0 to power 53 (always use for small number declearation)
 // BigInt => 121312341341344;  for large number of Int
 // String => "Hello No.1";
 // Boolean => false; // true;

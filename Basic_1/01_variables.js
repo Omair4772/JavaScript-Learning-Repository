@@ -13,8 +13,6 @@ console.log(account_Id);
 
 // for printing more then oneline you can print it by using console.table() METHOD
 console.table([account_email,account_password,account_state]);
-
-
 // Updating Above variables 
 
 // account_Id = "1111"    This is not allowed because account_Id is a CONST variable

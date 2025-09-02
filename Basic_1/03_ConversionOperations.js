@@ -26,6 +26,10 @@ THE OUTPUT FOR SCORE AFTER CONVERSION IS 33
 THE OUTPUT FOR STRINGSCORE AFTER CONVERSION IS NaN
 THE OUTPUT FOR BOOLSCORE AFTER CONVERSION IS 1
 
+1 => true
+0 => false
+"" => FALSE
+"Omair" => true
 
 FOR BOOLEAN CONVERSION IF WE CONVERT THEN 1 = TRUE / 0 = FALSE // EMPTY STRING = FALSE, VALUABLE STRING = TRUE 
 */
@@ -45,6 +49,7 @@ let findout3 = Boolean(IsloggedINN);
 
 
 // ######################################### OPERATIONS ###############################################
+
 let value = 2
 let negitiveValue = -value
 
@@ -78,7 +83,7 @@ console.log("2" + (2 + 2));     //  24    // () IT WILL FIRST adding the inside 
 
 
  let gamecounter2 = 100
- ++gamecounter2      
+ ++gamecounter2      //OutPut 101
 
-// console.log(gamecounter2);
+//console.log(gamecounter2);
 

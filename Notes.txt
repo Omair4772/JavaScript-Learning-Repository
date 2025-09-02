@@ -135,8 +135,69 @@ num1 = num2 = num3 = 2 + 2          // it will add 2+2 TO NUM1 NUM2 NUM3
 
 
 
-
 <!-- Day 4 -->
+
+
+// ######################################### Stack and heap ###############################################
+
+// we have to two types of memories 1 is stack type and the other is Heap.
+//stack is used in primitive data types
+//heap is used in NonPrimitive data types
+
+
+stack 
+
+myName = omair 
+myName2 = myName
+
+myName2 = Ahmad 
+                  it will only change the myName2 value and the myName value will remain the same because
+                  when we assign the myName to myName2 it assigning the copy of the the Myname variable so
+                  when you change the value of myName2 it will change in that copied variable
+
+console log will be 
+
+myName = omair 
+myName2 = Ahmad
+
+//////////////////////////////////////// Heap ////////////////////////////////////////////////////////////////
+
+const Myname ={
+  name: "Omair",
+} 
+const myName2 = Myname
+myName2.name = Ahmad 
+                      it will change the both variable values of myName and myName2 because when we assign
+                      the myName to the myName2 it giving the reference of myName values to the myName2 
+                      but when we change the value of myName2.name which is accutally a reference of both 
+                      it will change the value on both variables
+console.log will be 
+
+myName = Ahmad 
+myName2 = Ahmad
+
+
+//////////////////////////////////////// Strings ////////////////////////////////////////////////////////////////
+
+
+//Basic
+"Hello" + "World" 
+// print will be Hello World
+
+const name = "omair"
+const repoCount = "20"
+//console.log(name + repoCount +" this is it"); // not a best way instead you can type
+// console.log(`Hello this is best way ${name} and this is repo count ${repoCount}`);
+
+const myName = new String('OMAIR')
+console.log(myName[1]); // you can print specific value from the same string
+console.log(myName.length); // finding length
+console.log(myName.__proto__); // type of 
+console.log(myName.charAt(4)); // in the index which char is placed
+console.log(myName.toLowerCase()); // in Lower case
+console.log(myName.toLocaleUpperCase()); // in UpperCase
+console.log(myName.indexOf("R")); // Finding index of char
+// many more functions.. we can see in web browser console
 
 
 
