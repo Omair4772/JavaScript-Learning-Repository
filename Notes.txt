@@ -600,6 +600,79 @@ function sayMyName()
 // }
 // console.log(myarrayFunction(myarray));
 
+/////////////////////////////////////////////// Scopes ///////////////////////////////////////////////////
+
+// Scopes
+
+//  {} <= scopes.. which means that variables inside these parameters will be only access inside the Parameters you can't access it from inside
+
+// example
+
+// if(true){
+
+//     const a = 11
+//     console.log(a) // a can be access here but not outside the if statment
+// }
+// //console.log(a); // not accessble and giving you an error
+// // so a is a local variable of if statment ...
+// //  you can create another a variable outside the if statment it will consider as new variable
+// //  and will not give you an error of dublicate variable.
+// // DON't use VAR variable because it has a scoping issues .. you can use const and let insead
+
+// const a = 22 // just like this 
+
+// console.log(a) // <=
+
+
+/////////////////////// Hositing ///////////////////////
+
+// console.log(add(2));
+// // in that way of creating a function you can access add function before it created 
+// function add(num){
+//     return num + 1
+// }
+// // console.log(sub(3)) // giving you error
+// //because you can't access before declearing a function like this 
+// const sub = function(num){
+//     return num - 2
+// }
+// // console.log(sub(3)) // you can access it here
+
+
+
+// hoisting .......  INTERSETED
+
+// console.log(add(2));
+// // in that way of creating a function you can access add function before it created 
+// function add(num){
+//     return num + 1
+// }
+// // console.log(sub(3)) // giving you error
+// //because you can't access before declearing a function like this 
+// const sub = function(num){
+//     return num - 2
+// }
+// // console.log(sub(3)) // you can access it here
+
+//////////////////////////////////////// IIFE /////////////////////////////////////////////////
+
+// Immediately Invoked Function Expressions (IIFE)
+
+// // () ()  first one is for function and the secund one is for execution
+// //()() is used for removing the globle scope pollution 
+// (function chai(){
+//     // this type of IIFE called Named IIFE
+//     console.log("Chai Is Ready")
+// }) (); // use semicollon for ending the IIFE
+
+// // also can be for giving arguments also
+// ((name) => {
+//     // this type of IIFE called UnNamed IIFE
+//     console.log(`Chai Is Ready ${name}`)
+// }) ('Omair'); // use 2nd one as like a function which takes the parametters
+
+
+
 
 
 <!-- Day 6 -->
