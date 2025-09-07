@@ -925,3 +925,253 @@ function sayMyName()
 <!-- Day 7 -->
 
 
+
+/////////////////////////////////////////////////////// Filter MAP ///////////////////////////
+
+
+// How to get retun values from Array using Filter
+
+// const myArr = [1, 2, 3, 4, 5,  6, 7, 8, 9, 10]
+// let newarr = myArr.filter( (arr) => arr > 5) // also need a condition to return a value
+// // if you open scope on this so you have to write a return with it otherwise it will return 
+// // a empty array /////////////////
+// // myArr.filter( (arr) => { return arr > 5 })
+// console.log(newarr);
+
+// // if you want to use For Each  but this is very difficult
+// let newArr = []
+
+// myArr.forEach( (num) => {
+//     if(num > 5){
+//         newArr.push(num)
+//     }
+// })
+// console.log(newArr);
+
+// Filter Out data From database type Data
+// sometimes you will get data from database like this... Objects inside array 
+// const dataBaseData = [
+    //     {title: "Book one", genre: "History", publish: 1916, edition : 2015},
+    //     {title: "Book two", genre: "Science", publish: 1936, edition : 2016},
+    //     {title: "Book three", genre: "Fiction", publish: 1946, edition : 2017},
+    //     {title: "Book four", genre: "Non Fiction", publish: 1956, edition : 2018},
+    //     {title: "Book five", genre: "History", publish: 1976, edition : 2019},
+    //     {title: "Book six", genre: "Bio", publish: 1986, edition : 2020},
+    //     {title: "Book two", genre: "Science", publish: 1982, edition : 2022},
+    //     {title: "Book six", genre: "Bio", publish: 1996, edition : 2024}
+    // ]
+    
+    // const filteredBooks = dataBaseData.filter((book) => book.genre === "Bio" || book.publish > 1950);
+    // console.log(filteredBooks);
+    
+    // MAP
+    // const myNumbers = [1, 2, 3, 4, 5,  6, 7, 8, 9, 10]
+    // // automatically return a value
+    // const newNums = myNumbers.map((nums) =>{ return nums + 10 })
+    // console.log(newNums);
+    
+//     // CHAINING METHOD
+// const Numbers = [1, 2, 3, 4, 5,  6, 7, 8, 9, 10] 
+
+// const newNumbers = Numbers
+//                     .map((num) => num * 10)
+//                     .map((num) => num +1)           // you can use many map and filter at the same time
+//                     .filter((num)=> num >= 50)
+// console.log(newNumbers);
+
+
+
+
+///////////////////////////////////////// Reduce /////////////////////////////////////////////////
+
+// Reduce 
+// const myNums = [1, 2, 3, 4, 5]
+// const initialValue = 0
+
+// myNums.reduce(function (acc, currentVal ) {
+//     console.log(`acc: ${acc} CurrentVal: ${currentVal}`);   
+//     return acc + currentVal
+// }, initialValue )
+
+// On Arrow Function
+// const total = myNums.reduce((acc, currentVal)=> acc + currentVal, initialValue)
+//     console.log(total);
+
+// const shoppingCart =[
+//     {
+//         itemName: "Js Course",
+//         price:  999
+//     },
+//     {        
+//         itemName: "React Course",
+//         price:  1500   
+//     },
+//     {
+//         itemName: "data Science Course",
+//         price:  2000
+//     },
+// ]
+// const totalPrice = shoppingCart.reduce((acc, item) => acc + item.price ,0) // 0 is initail value
+// console.log(totalPrice);
+
+////////////////////////////////////////////////////// DOM /////////////////////////////////////////////////
+
+
+<!-- Doing THis On the Web Console -->
+<!-- document.getElementById("title")  <= Filtering By Id -->
+<!-- document.getElementById("title").className  <= Getting ClassName By filtering ID -->
+<!-- document.getElementById("title").getAttribute("class")  <= Can Also Get For attributes -->
+<!-- document.getElementById("title").setAttribute("class","test")  <= Can Also Set attributes -->
+ <!--
+    const title = document.getElementById("title")
+    title.style.backgroundColor = "green"
+    title.style.borderRadius = "5px"
+    title.style.padding = "15px"
+
+    title.textContent // giving you also DisplayNone Text
+    Dom Learning on Youtube Hidden Text
+
+    title.innerHtml  // DOM LEARING ON YOUTUBE <span style="display: none;"> Hidden text</span 
+    Dom Learning on Youtube  
+
+    title.innerText // Giving you visible text
+    Dom Learning on Youtube
+
+    document.querrySelector("h1")   // it will give you the firstever used H1 tag in document
+    for ID (#title) for Class (.heading)
+    
+    document.querrySelectorAll("h1")   // it will give you All used H1 tag in document
+
+
+
+document.getElementsByClassName('Item_Name') // Will give you a HTML COLLECTION TYPE DATA
+
+To loop it
+const tempClassName = document.getElementsByClassName('Item_Name') 
+On that why you can't add it in the iteration like for each loops 
+
+You have to convert it First to do iteration on this 
+ const myArray = Array.from(tempClassName)
+ myArray.forEach((item)=> item.style.color = "orange") 
+
+ Another Way
+ 
+ myArray.forEach(function(li) {
+  li.style.color = "orange"   
+ })
+
+
+
+
+<!-- Day 8 -->
+
+
+//////////////////////////////////////////DOM (querrySelector)//////////////////////////////////////////////////
+
+
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children); // getting all the childrens of parent in HTML COLLECTION
+    // console.log(parent.children[1].innerHTML); // getting text from child
+    // // YOu can add a for loop for getting all the child items
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+     // access specific Objects in Parent
+    //  parent.children[1].style.color = "RED"; // access by index
+    //  parent.firstElementChild.style.color = "Orange";  // first child
+    //  parent.lastElementChild.style.color = "Yellow"; // last child
+     
+     // you can also access parent from the child
+
+ //    const myday = document.querySelector('.Day')
+ // console.log(myday.outerHTML);
+ //     myday.parentElement.style.color="red";
+ 
+     // Getting sibling objects
+    //  const myday = document.querySelector('.Day')
+    //     console.log(myday.nextElementSibling.outerText);
+    
+    // Child Nodes (Execution pattren)
+    // console.log("NODES: ", parent.childNodes);
+    
+     </script>
+
+/////////////////////////////////////////// ELEMENTS CREATATION ///////////////////////////
+
+
+
+
+// Make Randomized ELEMENTS
+
+// const minValue = 0, maxValue = 3
+// const myTitleArray = ["Facebook","Youtube","Google","Instagram"]
+// const myColorArray = ["red","Green","Blue","Orange"]
+// const myTextData = ["Learning Something New","Hey Its JS Course","How Are You","My Name Is Omair Ahmad"]    
+
+// function divCreate(title, bg_color, textData)
+// {
+//     const div = document.createElement('div')
+    
+//     div.className = "Parent";
+//     div.id =Math.floor( Math.random() * 10);
+//     console.log(div);
+//     // Adding custom Attributes
+//     div.setAttribute("Title", title);//"Title Generated");
+//     div.style.backgroundColor = bg_color;//"Green";
+//     div.style.padding = "20px";
+//     //div.innerText = "We are learning Element Creations";
+//     const addtext = document.createTextNode(textData)//"We are Learning JS")
+//     div.appendChild(addtext);
+//     div.style.color = "white"
+//     div.style.borderRadius = "20px"
+//     document.body.appendChild(div)
+// }
+
+// for (let index = 0; index <= 10; index++){
+    
+//     const random0 = Math.floor(Math.random()* (maxValue - minValue + 1 ))+ minValue;
+//     divCreate(myTitleArray[random0],myColorArray[random0],myTextData[random0])
+// }
+
+
+
+
+/////////////////////////////////////////////// DOM EDIT CREATE AND REMOVE //////////////////////////////////////
+
+
+
+
+   // Adding LI
+//     function add(name){
+//         const li = document.createElement('li');
+//         li.innerHTML = `${name}`
+//         document.querySelector('.language')
+//         .appendChild(li);
+//     }
+//     add("Python")
+    
+//     // ADDING LI in optimized Way (Using some DSA)
+// function addOpti(langName){
+//     const li = document.createElement('li');
+//     li.appendChild(document.createTextNode(langName))
+//     document.querySelector('.language').appendChild(li)
+// }
+// addOpti("html")
+
+// // EDITING 
+// const secondLang = document.querySelector("li:nth-child(2)")
+// // secondLang.innerHTML = "MOJO"
+// const newli = document.createElement('li')
+// newli.textContent = "Lua"
+// secondLang.replaceWith(newli)
+
+// // Editing 
+// const firstLang = document.querySelector("li:first-child")
+// firstLang.outerHTML = "<li>C#</li>"
+
+
+// // Remove 
+// const lastLang = document.querySelector("li:last-child")
+// lastLang.remove()

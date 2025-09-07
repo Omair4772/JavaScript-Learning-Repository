@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dom Learning</title>
+
+<style>
+    .bg_black{
+        background-color : #000;
+        color: rgb(255, 255, 255);
+    }
+</style>
+
+</head>
+
+<body class="bg_black">
+    <div>
+        <h1 id = "title" class="Heading"> DOM LEARING ON YOUTUBE <span style="display: none;"> Hidden text</span></h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <input type="password" name="" id="">
+
+        <ul>
+            <li class="Item_Name">One</li>
+            <li class="Item_Name">Two</li>
+            <li class="Item_Name">Three</li>
+            <li class="Item_Name">Four</li>
+        </ul>
+        
+    </div>
+</body>
+</html>
+
+
+<!-- Doing THis On the Web Console -->
+<!-- document.getElementById("title")  <= Filtering By Id -->
+<!-- document.getElementById("title").className  <= Getting ClassName By filtering ID -->
+<!-- document.getElementById("title").getAttribute("class")  <= Can Also Get For attributes -->
+<!-- document.getElementById("title").setAttribute("class","test")  <= Can Also Set attributes -->
+ <!--
+    const title = document.getElementById("title")
+    title.style.backgroundColor = "green"
+    title.style.borderRadius = "5px"
+    title.style.padding = "15px"
+
+    title.textContent // giving you also DisplayNone Text
+    Dom Learning on Youtube Hidden Text
+
+    title.innerHtml  // DOM LEARING ON YOUTUBE <span style="display: none;"> Hidden text</span 
+    Dom Learning on Youtube  
+
+    title.innerText // Giving you visible text
+    Dom Learning on Youtube
+
+    document.querrySelector("h1")   // it will give you the firstever used H1 tag in document
+    for ID (#title) for Class (.heading)
+    
+    document.querrySelectorAll("h1")   // it will give you All used H1 tag in document
+
+
+
+document.getElementsByClassName('Item_Name') // Will give you a HTML COLLECTION TYPE DATA
+
+To loop it
+const tempClassName = document.getElementsByClassName('Item_Name') 
+On that why you can't add it in the iteration like for each loops 
+
+You have to convert it First to do iteration on this 
+ const myArray = Array.from(tempClassName)
+ myArray.forEach((item)=> item.style.color = "orange") 
+
+ Another Way
+ 
+ myArray.forEach(function(li) {
+  li.style.color = "orange"   
+ })
+-->
+

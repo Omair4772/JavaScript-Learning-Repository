@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoM Part 2</title>
+
+    <style>
+        .parent{
+            color: aquamarine;
+            border-radius: 25px; 
+        }
+        .Day{
+           display:inline-block;
+           padding: 2%;
+           font-size:x-large;
+           background-color: rgba(104, 1, 1, 0.544);
+           border-radius: 10px;
+           
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="parent">
+        <div class="Day"> Monday</div>
+        <div class="Day"> Tuesday</div>
+        <div class="Day"> Wednesday</div>
+        <div class="Day"> Thursday</div>
+        <div class="Day"> Friday</div>
+        <div class="Day"> Saturday</div>
+        <div class="Day"> Sunday</div>
+    </div>
+</body>
+
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children); // getting all the childrens of parent in HTML COLLECTION
+    // console.log(parent.children[1].innerHTML); // getting text from child
+    // // YOu can add a for loop for getting all the child items
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+     // access specific Objects in Parent
+    //  parent.children[1].style.color = "RED"; // access by index
+    //  parent.firstElementChild.style.color = "Orange";  // first child
+    //  parent.lastElementChild.style.color = "Yellow"; // last child
+     
+     // you can also access parent from the child
+
+ //    const myday = document.querySelector('.Day')
+ // console.log(myday.outerHTML);
+ //     myday.parentElement.style.color="red";
+ 
+     // Getting sibling objects
+    //  const myday = document.querySelector('.Day')
+    //     console.log(myday.nextElementSibling.outerText);
+    
+    // Child Nodes (Execution pattren)
+    // console.log("NODES: ", parent.childNodes);
+    
+     </script>
+</html>
